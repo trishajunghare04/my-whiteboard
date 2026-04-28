@@ -3,6 +3,9 @@
 A professional real-time collaborative whiteboard app with AI features.
 
 ## 🚀 Quick Setup
+Clone Repository
+git clone https://github.com/YOUR_USERNAME/my-whiteboard.git
+cd my-whiteboard
 
 ### 1. PostgreSQL Database
 ```bash
@@ -25,7 +28,21 @@ cd frontend
 npm install
 npm start
 # Opens at http://localhost:3000
+
+🔐 Environment Variables
+
+Create a .env file inside /backend:
+
+PORT=5000
+MONGO_URI=your_database_url
+JWT_SECRET=your_secret_key
+
+⚠️ Do NOT commit .env files.
 ```
+
+🌐 App URLs
+Frontend: http://localhost:3000
+Backend: http://localhost:5000
 
 ## ✨ Features
 - 🔐 JWT Auth + PostgreSQL
