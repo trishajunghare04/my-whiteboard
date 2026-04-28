@@ -1,0 +1,15 @@
+{
+  "name": "my-whiteboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "setup:db": "cd backend && node -e \"require('./db').initDB().then(()=>process.exit(0))\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
